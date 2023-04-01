@@ -1,0 +1,66 @@
+.navigation dl,
+.navigation dt ,
+.navigation dd {
+    margin: 0;
+}
+
+.navigation dt,
+.navigation dd {
+    padding: 10px;
+}
+
+.navigation dt {
+    padding: 20px 10px;
+    color: #858585;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.navigation dd {
+    width: 100%;
+    padding: 10px 10px;
+    font-weight: 500;
+    color: #535353;
+}
+
+.navigation dd:hover {
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.navigation dd svg {
+    margin-right: 10px;
+}
+
+.contrast {
+    margin-right: 20px;
+    border: 0;
+    background-color: transparent;
+}
+
+.btn {
+    padding-left: 2px;
+    padding-right: 2px;
+    border: 0;
+    background-color: transparent;
+}
+
+.btn-small {
+    font-size: 10px;
+}
+
+.btn-medium {
+    font-size: 13px;
+}
+.btn-big {
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.dark .contrast,
+.dark .navigation dt,
+.dark .navigation dd,
+.dark .btn {
+    color: yellow
+}
