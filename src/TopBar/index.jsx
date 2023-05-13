@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faEye, faWindowMaximize, faStarHalfStroke } from '@fortawesome/free-regular-svg-icons';
 import './styles.css';
 
-export const SearchBar = ({
+export const TopBar = ({
   handleClick,
 }) => {
   const [isDarkTheme, setDarkTheme] = useState(false);
@@ -57,7 +57,7 @@ export const SearchBar = ({
   }
 
   return (
-    <div className="searchbar flex">
+    <div className="topbar flex">
       <div>
         <button className="btn btn-hamburger" onClick={handleClick}>
           <FontAwesomeIcon icon={faWindowMaximize} />
@@ -87,4 +87,4 @@ export const SearchBar = ({
   )
 };
 
-SearchBar.displayName = "SearchBar";
+TopBar.displayName = "TopBar";

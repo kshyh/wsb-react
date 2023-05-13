@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import { Navigation } from './Navigation';
-import { SearchBar } from './SearchBar';
+import { TopBar } from './TopBar';
 import { Avatar } from './Avatar';
 
 const getWidth = () => window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -29,7 +29,7 @@ function App() {
     <div className="App parent medium">
       <div className="div1 box">{(isNavVisible || width > 525) && <Navigation />}</div>
       <div className="div2 box">
-        <SearchBar handleClick={showNavigation} />
+        <TopBar handleClick={showNavigation} />
       </div>
       <div className="div3 box">
         1
