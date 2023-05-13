@@ -3,7 +3,7 @@ import './styles.css';
 
 export const Overview = memo(() => {  
     return (
-      <h1>Overview</h1>
+      <h1>Dashboard</h1>
     );
   });
   
