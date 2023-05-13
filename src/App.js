@@ -1,16 +1,35 @@
+import { useState, useEffect } from 'react';
 import './App.css';
 import { Navigation } from './Navigation';
 import { SearchBar } from './SearchBar';
 import { Avatar } from './Avatar';
 
+const getWidth = () => window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
 function App() {
+  const [isNavVisible, setNavVisible] = useState(false);
+  let [width, setWidth] = useState(getWidth());
+
+  useEffect(() => {
+    const resizeListener = () => {
+      setWidth(getWidth());
+      setNavVisible(false);
+    };
+    window.addEventListener('resize', resizeListener);
+
+    return () => {
+      window.removeEventListener('resize', resizeListener);
+    };
+  }, []);
+
+  function showNavigation() {
+    setNavVisible(!isNavVisible);
+  }
   return (
     <div className="App parent medium">
-      <div className="div1 box">
-        <Navigation />
-      </div>
+      <div className="div1 box">{(isNavVisible || width > 525) && <Navigation />}</div>
       <div className="div2 box">
-        <SearchBar />
+        <SearchBar handleClick={showNavigation} />
       </div>
       <div className="div3 box">
         1

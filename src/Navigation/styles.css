@@ -32,35 +32,3 @@
 .navigation dd svg {
     margin-right: 10px;
 }
-
-.contrast {
-    margin-right: 20px;
-    border: 0;
-    background-color: transparent;
-}
-
-.btn {
-    padding-left: 2px;
-    padding-right: 2px;
-    border: 0;
-    background-color: transparent;
-}
-
-.btn-small {
-    font-size: 10px;
-}
-
-.btn-medium {
-    font-size: 13px;
-}
-.btn-big {
-    font-size: 16px;
-    margin-right: 20px;
-}
-
-.dark .contrast,
-.dark .navigation dt,
-.dark .navigation dd,
-.dark .btn {
-    color: yellow
-}

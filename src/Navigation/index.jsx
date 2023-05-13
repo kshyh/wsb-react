@@ -5,18 +5,18 @@ import './styles.css';
 // import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 
 
-const Url = {
-    dashboard: "/dashboard",
-    layouts: "/layouts",
-    accountSettings: "/account-settings",
-    authentications: "/authentications",
-    misc: "/misc",
-    cards: "/cards",
-    userInterface: "/user-interface",
-    extendedUi: "/extended-ui",
-    boxicons: "/boxicons",
-    formElements: "/form-elements",
-  }
+// const Url = {
+//     dashboard: "/dashboard",
+//     layouts: "/layouts",
+//     accountSettings: "/account-settings",
+//     authentications: "/authentications",
+//     misc: "/misc",
+//     cards: "/cards",
+//     userInterface: "/user-interface",
+//     extendedUi: "/extended-ui",
+//     boxicons: "/boxicons",
+//     formElements: "/form-elements",
+//   }
 
 export const Navigation = memo(() => {
     // const { pathname, state: locationState } = useLocation();
