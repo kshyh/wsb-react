@@ -19,9 +19,6 @@
 .navigation dd {
     width: 100%;
     padding: 10px 10px;
-}
-
-.navigation dd a {
     font-weight: 500;
     color: #535353;
 }

@@ -2,71 +2,76 @@ import { memo } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopy, faAddressBook,faEdit,faEye,faEnvelope,faCalendarPlus ,faKeyboard,faWindowRestore} from '@fortawesome/free-regular-svg-icons';
 import './styles.css';
-// import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { Url } from "../App";
 
-
-// const Url = {
-//     dashboard: "/dashboard",
-//     layouts: "/layouts",
-//     accountSettings: "/account-settings",
-//     authentications: "/authentications",
-//     misc: "/misc",
-//     cards: "/cards",
-//     userInterface: "/user-interface",
-//     extendedUi: "/extended-ui",
-//     boxicons: "/boxicons",
-//     formElements: "/form-elements",
-//   }
 
 export const Navigation = memo(() => {
-    // const { pathname, state: locationState } = useLocation();
-    // const navigate = useNavigate();
-
      return (
         <div className="navigation">
             <dl>
                 <dd>
-                    <FontAwesomeIcon icon={faAddressBook} />
-                    Dashboard
+                    <Link to={Url.dashboard}>
+                        <FontAwesomeIcon icon={faAddressBook} />
+                        Dashboard
+                    </Link>
                 </dd>
                 <dd>
-                    <FontAwesomeIcon icon={faEdit} />
-                    Layouts
+                    <Link to={Url.layouts}>
+                        <FontAwesomeIcon icon={faEdit} />
+                        Layouts
+                    </Link>
                 </dd>
                 <dt>Pages</dt>
                 <dd>
-                    <FontAwesomeIcon icon={faEye} />
-                    Account Settings
+                    <Link to={Url.accountSettings}>
+                        <FontAwesomeIcon icon={faEye} />
+                        Account Settings
+                    </Link>
                 </dd>
                 <dd>
-                    <FontAwesomeIcon icon={faEnvelope} />
-                    Authentications
+                    <Link to={Url.authentications}>
+                        <FontAwesomeIcon icon={faEnvelope} />
+                        Authentications
+                    </Link>
                 </dd>
                 <dd>
+                    <Link to={Url.misc}>
                     <FontAwesomeIcon icon={faKeyboard} />
                     Misc
+                    </Link>
                 </dd>
                 <dt>Components</dt>
                 <dd>
-                    <FontAwesomeIcon icon={faCalendarPlus} />
-                    Cards
+                    <Link to={Url.cards}>
+                        <FontAwesomeIcon icon={faCalendarPlus} />
+                        Cards
+                    </Link>
                 </dd>
                 <dd>
-                    <FontAwesomeIcon icon={faEdit} />
-                    User Interface
+                    <Link to={Url.userInterface}>
+                        <FontAwesomeIcon icon={faEdit} />
+                        User Interface
+                    </Link>
                 </dd>
                 <dd>
-                <FontAwesomeIcon icon={faAddressBook} />
-                    Extended UI
+                    <Link to={Url.extendedUi}>
+                        <FontAwesomeIcon icon={faAddressBook} />
+                        Extended UI
+                    </Link>
                 </dd>
                 <dd>
-                    <FontAwesomeIcon icon={faCopy} />
-                    Boxicons
+                    <Link to={Url.boxicons}>
+                        <FontAwesomeIcon icon={faCopy} />
+                        Boxicons
+                    </Link>
                 </dd>
                 <dt>Forms and Tables</dt>
                 <dd>
-                    <FontAwesomeIcon icon={faWindowRestore} />
-                    Form Elements
+                    <Link to={Url.formElements}>
+                        <FontAwesomeIcon icon={faWindowRestore} />
+                        Form Elements
+                    </Link>
                 </dd>
             </dl>
         </div>
